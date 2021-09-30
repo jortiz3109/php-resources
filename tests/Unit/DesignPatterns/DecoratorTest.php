@@ -25,9 +25,9 @@ class DecoratorTest extends TestCase
     public function decoratorsProvider(): array
     {
         return [
-            'COP' => ['decorator' => COPDecorator::class, 'expected' => 'COP 20,000.00'],
-            'USD' => ['decorator' => USDDecorator::class, '$20,000.00'],
-            'CRC' => ['decorator' => CRCDecorator::class, 'CRC 20,000.00']
+            'COP' => [ COPDecorator::class, 'COP 20,000.00'],
+            'USD' => [ USDDecorator::class, '$20,000.00'],
+            'CRC' => [ CRCDecorator::class, 'CRC 20,000.00']
         ];
     }
 }
